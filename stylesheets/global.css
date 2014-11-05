@@ -17,7 +17,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: bottom;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -45,12 +46,12 @@ table {
 /*** reset ***/
 
 #wrapper{
-	width: 1200px;
 	margin: 0 auto;
+	font-family: "Arial";
 }
 
 #header{
-	height: 180px;
+	padding-bottom: 10px;
 }
 	#logo{
 		display: inline-block;
@@ -63,21 +64,43 @@ table {
 	}
 	#nav li{
 		display: inline-block;
+		border-bottom: 3px solid #8a8;
 		list-style: none;
 	}
 		#nav a{
 			text-decoration: none;
 			color: #444;
+			text-transform: uppercase;
+			font-weight: bold; 
 		}
+			#nav a span{
+				text-transform: capitalize;
+				font-weight: normal; 
+			}
 
 #content{
 
 }
-	.container_tier, .footer_tier{
-		display: inline-block;
-		width: 33%;
-		vertical-align: top;
+	#container{
+		padding: 10px 0px;
 	}
+		.container-tier, .footer-tier{
+			display: inline-block;
+			width: 33%;
+			padding: 0 15px;
+			vertical-align: top;
+		}
+		.container-tier h2{
+			text-transform: uppercase;
+			padding: 10px 0 30px;
+			border-top: 3px solid #8a8;
+			color: #c93;
+		}
+		.container-tier h3{
+			padding: 5px 0;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
 
 #footer{
 
