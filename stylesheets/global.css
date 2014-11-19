@@ -84,24 +84,71 @@ table {
 	#container{
 		padding: 10px 0px;
 	}
-		.container-tier, .footer-tier{
-			display: inline-block;
-			width: 33%;
-			padding: 0 15px;
-			vertical-align: top;
-		}
-		.container-tier h2{
+		.container-tier h2, .footer-tier h2{
 			text-transform: uppercase;
 			padding: 10px 0 30px;
 			border-top: 3px solid #8a8;
 			color: #c93;
+			font-size: 130%;
 		}
 		.container-tier h3{
-			padding: 5px 0;
+			padding: 15px 0;
+			color: #8a8;
+			font-size: 85%;
 			font-weight: bold;
 			text-transform: uppercase;
 		}
+		.infos{
+			padding: 10px 0;
+		}
+			.infos span{
+				font-size: 75%;
+			}
+			.infos .date-event, .infos .date-publication{
+				color: #66c;
+				font-weight: bold;
+			}
+			.infos .heure-event{
+				color: #777;
+			}
+	#buttons a{
+		padding: 15px;
+		background-color: #66c;
+		color: white;
+		text-decoration: none;
+	}
 
 #footer{
 
 }
+	.footer-tier {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.footer-tier ul li{
+		padding: 10px;
+		border-bottom: 1px solid #777;
+	}
+
+	#contact p{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #777;
+		line-height: 1.8em;
+	}
+		#contact p span{
+
+		}
+	#contact img{
+		width: 30px;
+	}
+
+	#picstream table{
+		width: 100%;
+	}
+	#picstream td{
+		padding: 2.5%;
+	}
+	#picstream img{
+		width: 100%;
+	}

@@ -41,8 +41,12 @@
 	#slider img{
 		width: 100%;
 	}
-	.container-tier{
-		padding: 0 20px;
+	.container-tier, .footer-tier{
+		display: inline-block;
+		width: 33%;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: top;
 	}
 }
 /* Only mobile version */
