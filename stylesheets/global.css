@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,700);
+
 /*** RESET CSS ***/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -16,7 +18,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: "Dosis", sans-serif;
+	letter-spacing: 1px;
 	vertical-align: bottom;
 	box-sizing: border-box;
 }
@@ -57,10 +60,11 @@ table {
 		display: inline-block;
 	}
 	#logo img{
-		height: 180px;
+		width: 100%;
 	}
 	#nav{
 		display: inline-block;
+		padding: 0px;
 	}
 	#nav li{
 		display: inline-block;
@@ -78,20 +82,29 @@ table {
 				font-weight: normal; 
 			}
 
+#container >div	, #footer-top >div{
+	padding: 10px ;
+}
+	#container > div h2, #footer-top > div h2{
+		text-transform: uppercase;
+		padding: 10px 0 30px;
+		border-top: 3px solid #8a8;
+		color: #c93;
+		font-size: 130%;
+	}
+ #container >div:nth-of-type(2), #footer-top >div:first-of-type, #footer-top >div:last-of-type{
+	background-color: #e6e6e6;
+}
 #content{
 
 }
+	#slider img{
+		width: 100%;
+	}
 	#container{
 		padding: 10px 0px;
 	}
-		.container-tier h2, .footer-tier h2{
-			text-transform: uppercase;
-			padding: 10px 0 30px;
-			border-top: 3px solid #8a8;
-			color: #c93;
-			font-size: 130%;
-		}
-		.container-tier h3{
+		#container > div h3{
 			padding: 15px 0;
 			color: #8a8;
 			font-size: 85%;
@@ -105,27 +118,39 @@ table {
 				font-size: 75%;
 			}
 			.infos .date-event, .infos .date-publication{
-				color: #66c;
+				color: #69c;
 				font-weight: bold;
 			}
 			.infos .heure-event{
 				color: #777;
 			}
 	#buttons a{
+		display: block;
+		margin: 10px 0;
 		padding: 15px;
-		background-color: #66c;
-		color: white;
+		background-color: #9bd;
+		color: black;
 		text-decoration: none;
 	}
+		#buttons a h4{
+			font-size: 125%;
+			font-weight: bold;
+			color: #cfc;
+		}
+	#tweetos{
+		padding: 10px;
+		border: 2px solid #ddd;
+		border-radius: 5px;
+	}
+		#tweetos span{
+			font-weight: bold;
+			color: #69f;
+		}
 
 #footer{
 
 }
-	.footer-tier {
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-	.footer-tier ul li{
+	#footer-top > div ul li{
 		padding: 10px;
 		border-bottom: 1px solid #777;
 	}
@@ -139,16 +164,24 @@ table {
 		#contact p span{
 
 		}
-	#contact img{
-		width: 30px;
-	}
+		#contact img{
+			width: 30px;
+		}
 
 	#picstream table{
 		width: 100%;
 	}
-	#picstream td{
-		padding: 2.5%;
-	}
-	#picstream img{
-		width: 100%;
+		#picstream td{
+			padding: 2.5%;
+		}
+			#picstream img{
+				width: 100%;
+			}
+
+	#footer-bot{
+		padding: 15px;
+		background-color: black;
+		color: white;
+		font-weight: bold;
+		text-align: center;
 	}
